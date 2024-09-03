@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 
 # Load the CSV data
+  # Change the PATH of the file using the directory where you saved it on your computer.
 data = pd.read_csv('/Users/dimitrisherrera/Downloads/Knoxville_pre.csv')
 data = data.set_index('time')
 data.index = pd.to_datetime(data.index)
